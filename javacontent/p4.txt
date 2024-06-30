@@ -1,0 +1,24 @@
+class A4_overload
+{
+int x=100,y=200;
+public static void main(String ar[])
+{
+ A4_overload obj=new A4_overload();
+ obj.add();
+ System.out.println("Sum of integers="+obj.add(10,20));
+ System.out.println("Sum of float numbers="+obj.add(10.5f,20.3f));
+ }
+void add()
+{
+ int sum=x+y;
+ System.out.println("Sum of default values="+sum);
+}
+int add(int x,int y)
+{
+ return (x+y);
+}
+float add(float x,float y)
+{
+ return (x+y);
+}
+}

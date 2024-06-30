@@ -1,0 +1,27 @@
+class A6_static
+{
+int x;
+static int y,z;
+static void mul()
+{
+ //x=10; // ‘x’ can not be accessed here because it is non-static.
+ y=5;
+z=15;
+int m=y*z;
+System.out.println("Multiplication of y & z="+m);
+}
+public static void main(String ar[])
+{
+ A6_static s1=new A6_static();
+ A6_static s2=new A6_static();
+ s1.x=10;
+ s2.x=20;
+ s1.y=100;
+ s2.y=200;
+ System.out.println("s1's x="+s1.x);
+ System.out.println("s2's x="+s2.x);
+ System.out.println("s1's y="+s1.y);
+ System.out.println("s2's y="+s2.y);
+ A6_static.mul();
+}
+}

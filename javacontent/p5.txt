@@ -1,0 +1,34 @@
+classAddSub
+{
+intx=6,y=2;i
+nt sum()
+{
+return(x+y);
+}
+int sub()
+{
+return(x-y);
+}
+}
+classMulDivextendsAddSub
+{
+intmul()
+{
+return(x*y);
+}
+int div()
+{
+return(x/y);
+}
+}
+class mathop
+{
+publicstaticvoid main(Stringa[])
+{
+MulDiv obj=new
+MulDiv();System.out.println("Sum="+obj.sum());S
+ystem.out.println("Subtraction="+obj.sub());Syste
+m.out.println("Multiplication="+obj.mul());System.
+out.println("Division="+obj.div());
+}
+}

@@ -1,0 +1,16 @@
+import java.io.*;
+class A extends Thread
+{
+public void run ()
+{
+System.out.println ( "thread A is running" ) ;
+}
+}
+class A9_a_tthread
+{
+public static void main ( String args[] )
+{
+A obj = new A ();
+obj.start () ;
+}
+}
